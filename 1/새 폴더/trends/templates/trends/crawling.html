@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>크롤링 기초 - 전체 기간 검색 결과</h2>
+{% for trend in trends %}
+<div>
+<p>검색결과 {{trend.name}} - {{trend.result}} / 검색 일자: {{trend.created_at}} </p>
+</div>
+<hr>
+{% endfor %}
+
+
+{% endblock content %}
